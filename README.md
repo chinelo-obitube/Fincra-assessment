@@ -1,7 +1,7 @@
 # Fincra-assessment
 
 # Deploy the kong api gateway 
-# What is Kong API gateway?
+## What is Kong API gateway?
 According to its official documentation, Kong Gateway is a lightweight, fast, and flexible cloud-native API gateway, built for hybrid and multi-cloud, optimized for microservices and distributed architectures. 
 Kong Gateway runs in front of any RESTful API and can be extended through modules and plugins. It’s designed to run on decentralized architectures, including hybrid-cloud and multi-cloud deployments.
 
