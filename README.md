@@ -26,7 +26,7 @@ Please ensure that these tools above are installed.
 For the purpose of this assessment, I used the Kong Gateway (OSS) mode which is an open-source package containing the basic API gateway functionality and open-source plugins.
 
 
-# Steps 
+## Steps 
 1. Create an Ubuntu 20.04 LTS instance using AWS.
 2. Install Docker using this command: `sudo apt install docker.io`.
 3. Install Docker-compose.
