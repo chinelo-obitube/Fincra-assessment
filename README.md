@@ -39,7 +39,7 @@ For the purpose of this assessment, I used the Kong Gateway (OSS) mode which is 
 10. Clone the repo and check the docker-compose.yml file.
 11. Add docker-compose to the sudoers group.
 10. Create the docker-compose file. This file contains the PostgreSQL, Kong and konga images configuration. 
-10. Run the docker-compose file using docker-compose up -d.
+10. Run the docker-compose file using `docker-compose up -d`.
 11. verify the the containers are running and you access the kong admin-api through this url:http://3.8.28.21:8001
 
  
@@ -56,11 +56,11 @@ For the purpose of this assessment, I used the Kong Gateway (OSS) mode which is 
 
  # Configure nginx to listen to requests from specific ports externally and route to kong and konga. 
  ## Steps
- 1. ensure that nginx is installed and its service enabled.
- 2. cd into /etc/nginx/sites-enabled and create an nginx.conf file using sudo touch nginx.conf
- 3. edit the nginx.conf file.
+ 1. Ensure that nginx is installed and its service enabled.
+ 2. Cd into /etc/nginx/sites-enabled and create an nginx.conf file using `sudo touch nginx.conf`.
+ 3. Edit the nginx.conf file.
  4. Make sure to reload the nginx service after configuration of the nginx.conf file.
-    sudo systemctl reload nginx.service
+    `sudo systemctl reload nginx.service`
  5. Test to ensure that the nginx is configured and ports are routing to the specific endpoints.
  6. Access the kong api through this url: http://3.8.28.21/kong 
  7. Access the konga-dashboard through this url: http://3.8.28.21/konga 
