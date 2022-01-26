@@ -30,10 +30,7 @@ For the purpose of this assessment, I used the Kong Gateway (OSS) mode which is 
 1. Create an Ubuntu 20.04 LTS instance using AWS.
 2. Install Docker using this command: `sudo apt install docker.io`.
 3. Install Docker-compose.
-4. Add your user to the sudoers group using this command: 
-
-```sudo usermod -aG docker $USER
-```
+4. Add your user to the sudoers group using this command: `sudo usermod -aG docker $USER`
 5. Exit and ssh back into the instance, then run the command: newgrp docker to activate the changes.
 6. Setup swap limit capabilities on docker by editing the /etc/default/grub file
 7. Add the following string inside of the GRUB_CMDLINE_LINUX_DEFAULT variable:cgroup_enable=memory swapaccount=1
