@@ -40,7 +40,7 @@ For the purpose of this assessment, I used the Kong Gateway (OSS) mode which is 
 11. Add docker-compose to the sudoers group.
 10. Create the docker-compose file. This file contains the PostgreSQL, Kong and konga images configuration. 
 10. Run the docker-compose file using `docker-compose up -d`.
-11. verify the the containers are running and you access the kong admin-api through this url:http://18.133.234.14:8001
+11. verify the the containers are running and you access the kong admin-api through this url:http://35.177.242.111:8001
 
  
  # Deploy konga dashboard (using docker) for kong API administration 
@@ -48,10 +48,10 @@ For the purpose of this assessment, I used the Kong Gateway (OSS) mode which is 
  According to the author, Konga is a fully featured open source, multi-user GUI, that makes the hard task of managing multiple Kong installations a breeze. It can be integrated with some of the most popular databases out of the box and provides the visual tools you need to better understand and maintain your architecture.
 
  ## Steps
- 1. The konga dashboard is already running as a docker container and can be accessed  using this url: http://18.133.234.14:1337.
+ 1. The konga dashboard is already running as a docker container and can be accessed  using this url: http://35.177.242.111:1337.
  2. Configure the kong admin api to be accessed through the konga GUI.
  3. First, create a user and include your credentials.
- 4. Create a connection to the kong-admin api. Add name as kong-admin-api and http://18.133.234.14:8001 as the Kong Admin API url.
+ 4. Create a connection to the kong-admin api. Add name as kong-admin-api and http://35.177.242.111:8001 as the Kong Admin API url.
 
 
  # Configure nginx to listen to requests from specific ports externally and route to kong and konga. 
@@ -62,7 +62,7 @@ For the purpose of this assessment, I used the Kong Gateway (OSS) mode which is 
  4. Make sure to reload the nginx service after configuration of the nginx.conf file.
     `sudo systemctl reload nginx.service`
  5. Test to ensure that the nginx is configured and ports are routing to the specific endpoints.
- 6. Access the kong api through this url: http://18.133.234.14/kong 
- 7. Access the konga-dashboard through this url: http://18.133.234.14/konga 
+ 6. Access the kong api through this url: http://35.177.242.111/kong 
+ 7. Access the konga-dashboard through this url: http://35.177.242.111/konga 
 
-Problems: the http://18.133.234.14/konga points to a page with the following "Neat! Your account is activated."
+Problems: the http://135.177.242.111/konga points to a page with the following "Neat! Your account is activated."
