@@ -65,4 +65,4 @@ For the purpose of this assessment, I used the Kong Gateway (OSS) mode which is 
  6. Access the kong api through this url: http://35.177.242.111/kong 
  7. Access the konga-dashboard through this url: http://35.177.242.111/konga 
 
-Problems: the http://135.177.242.111/konga points to a page with the following "Neat! Your account is activated."
+Problems: the http://35.177.242.111/konga points to a page with the following "Neat! Your account is activated."
