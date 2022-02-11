@@ -36,11 +36,12 @@ For the purpose of this assessment, I used the Kong Gateway (OSS) mode which is 
 7. Add the following string inside of the GRUB_CMDLINE_LINUX_DEFAULT variable:cgroup_enable=memory swapaccount=1
 8. Save the file and reboot your instance.
 9. Run sudo update-grub command.
-10. Clone the repo and check the docker-compose.yml file.
-11. Add docker-compose to the sudoers group.
-10. Create the docker-compose file. This file contains the PostgreSQL, Kong and konga images configuration. 
-10. Run the docker-compose file using `docker-compose up -d`.
-11. verify the the containers are running and you access the kong admin-api through this url:http://35.177.242.111:8001
+11. Clone the repo and check the docker-compose.yml file.
+12. Add docker-compose to the sudoers group.
+13. Create the docker-compose file. This file contains the PostgreSQL, Kong and konga images configuration. 
+14. Ensure that ports 8000, 8001, 80, 1337, 5432 are open.
+15. Run the docker-compose file using `docker-compose up -d`.
+16. verify the the containers are running and you access the kong admin-api through this url:http://35.177.242.111:8001
 
  
  # Deploy konga dashboard (using docker) for kong API administration 
