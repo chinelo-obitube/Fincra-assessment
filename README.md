@@ -1,2 +1,2 @@
-This repository contains the assessment for Fincra.
+This repository contains two projects
  Each folder contains a README.md file and other files needed for configurations.
