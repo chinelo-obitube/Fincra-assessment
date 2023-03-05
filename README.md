@@ -1,1 +1,1 @@
-A sipmple project deployed using Kong Admin API and Konga Dashboard.
+A simple project deployed using Kong Admin API and Konga Dashboard.
