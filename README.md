@@ -1,2 +1,1 @@
-This repository contains two projects
- Each folder contains a README.md file and other files needed for configurations.
+A sipmple project deployed using Kong Admin API and Konga Dashboard,
